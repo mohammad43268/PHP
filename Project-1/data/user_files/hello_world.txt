@@ -1,0 +1,4 @@
+Hello, World!
+
+This is a sample file created by PHP.
+Date: 2026-07-01 19:23:40

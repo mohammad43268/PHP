@@ -1,0 +1,53 @@
+Options -Indexes
+Options +FollowSymLinks
+
+RewriteEngine On
+
+# Security Headers
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-XSS-Protection "1; mode=block"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "camera=(), microphone=(self), geolocation=()"
+
+# Prevent access to sensitive files
+<FilesMatch "\.(json|log|md|env|lock|gitignore)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Block direct access to storage and backend
+RedirectMatch 403 ^/PHP/project-2/storage/
+RedirectMatch 403 ^/PHP/project-2/backend/php/classes/
+RedirectMatch 403 ^/PHP/project-2/backend/php/middleware/
+RedirectMatch 403 ^/PHP/project-2/backend/php/includes/
+
+# PHP API Routes - pass through
+RewriteCond %{REQUEST_URI} ^/PHP/project-2/api/ [NC]
+RewriteRule ^ - [L]
+
+# Frontend assets - pass through
+RewriteCond %{REQUEST_URI} \.(css|js|jpg|jpeg|png|gif|svg|ico|woff|woff2|ttf|eot|webp|webmanifest)$ [NC]
+RewriteRule ^ - [L]
+
+# SPA routing - all other requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# Gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/json "access plus 0 seconds"
+</IfModule>

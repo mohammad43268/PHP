@@ -1,0 +1,14 @@
+[01-Jul-2026 20:33:11 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\mohammad huzaifa\OneDrive\PHP\PHP\project-2\backend\php\classes\Storage.php:18
+Stack trace:
+#0 C:\Users\mohammad huzaifa\OneDrive\PHP\PHP\project-2\backend\php\classes\Storage.php(18): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\mohammad huzaifa\OneDrive\PHP\PHP\project-2\backend\php\classes\Storage.php(50): Storage::init()
+#2 Command line code(1): Storage::write('test.json', Array)
+#3 {main}
+  thrown in C:\Users\mohammad huzaifa\OneDrive\PHP\PHP\project-2\backend\php\classes\Storage.php on line 18
+[01-Jul-2026 20:33:21 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\mohammad huzaifa\OneDrive\PHP\PHP\project-2\backend\php\classes\Storage.php:18
+Stack trace:
+#0 C:\Users\mohammad huzaifa\OneDrive\PHP\PHP\project-2\backend\php\classes\Storage.php(18): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\mohammad huzaifa\OneDrive\PHP\PHP\project-2\backend\php\classes\Storage.php(50): Storage::init()
+#2 Command line code(1): Storage::write('test.json', Array)
+#3 {main}
+  thrown in C:\Users\mohammad huzaifa\OneDrive\PHP\PHP\project-2\backend\php\classes\Storage.php on line 18

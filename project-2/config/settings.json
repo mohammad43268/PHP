@@ -1,0 +1,64 @@
+{
+  "theme": "dark",
+  "accent_color": "#00D4FF",
+  "accent_secondary": "#7B2FBE",
+  "font_size": 14,
+  "sidebar_collapsed": false,
+  "ai": {
+    "provider": "ollama",
+    "ollama_url": "http://localhost:11434",
+    "ollama_model": "llama3.2",
+    "openai_key": "",
+    "openai_model": "gpt-4o",
+    "gemini_key": "",
+    "gemini_model": "gemini-2.0-flash",
+    "anthropic_key": "",
+    "anthropic_model": "claude-3-5-sonnet-20241022",
+    "temperature": 0.7,
+    "max_tokens": 4096,
+    "memory_enabled": true,
+    "streaming": true
+  },
+  "voice": {
+    "enabled": true,
+    "language": "en-US",
+    "wake_word": "forge",
+    "tts_enabled": true,
+    "tts_rate": 1.0,
+    "tts_pitch": 1.0
+  },
+  "security": {
+    "session_timeout": 28800,
+    "require_password": false,
+    "vault_password": "",
+    "two_factor": false
+  },
+  "workspace": {
+    "name": "DevForge AI",
+    "author": "Developer",
+    "python_path": "python3",
+    "cpp_binaries_path": "./backend/cpp/bin",
+    "git_path": "git",
+    "show_hidden_files": false,
+    "editor_theme": "vs-dark",
+    "editor_font_size": 14,
+    "editor_word_wrap": true
+  },
+  "notifications": {
+    "enabled": true,
+    "sound": false,
+    "desktop": false
+  },
+  "python_service": {
+    "url": "http://127.0.0.1:8765",
+    "auto_start": false,
+    "timeout": 30
+  },
+  "plugins": {
+    "enabled": [],
+    "marketplace_url": "https://devforge-plugins.example.com"
+  },
+  "analytics": {
+    "track_usage": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "DevForge AI",
+  "short_name": "DevForge",
+  "description": "Self-hosted AI-powered developer workspace",
+  "start_url": "/PHP/project-2/",
+  "display": "standalone",
+  "background_color": "#06060F",
+  "theme_color": "#00D4FF",
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='20' fill='%2306060F'/%3E%3Ctext y='140' x='20' font-size='140'%3E⚡%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["developer", "productivity", "utilities"],
+  "shortcuts": [
+    { "name": "AI Assistant", "url": "/PHP/project-2/#ai-assistant", "description": "Open AI chat" },
+    { "name": "API Studio",   "url": "/PHP/project-2/#api-studio",   "description": "Test APIs" },
+    { "name": "Vault",        "url": "/PHP/project-2/#vault",        "description": "Encrypted files" }
+  ]
+}

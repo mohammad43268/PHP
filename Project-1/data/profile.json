@@ -1,0 +1,29 @@
+{
+  "profile": {
+    "name": "Mohammad Huzaifa",
+    "bio": "Frontend Developer exploring the backend with PHP ⚡",
+    "role": "Full-Stack Developer in Training",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4",
+    "theme_color": "#6366f1",
+    "location": "India",
+    "joined": "2024"
+  },
+  "skills": [
+    { "name": "PHP", "level": 75, "color": "indigo" },
+    { "name": "HTML / CSS", "level": 92, "color": "violet" },
+    { "name": "JavaScript", "level": 80, "color": "amber" },
+    { "name": "MySQL", "level": 65, "color": "cyan" },
+    { "name": "Git & GitHub", "level": 70, "color": "emerald" }
+  ],
+  "links": [
+    { "title": "💻 GitHub Profile", "url": "https://github.com/mohammad43268", "highlight": true },
+    { "title": "📁 Portfolio Projects", "url": "#", "highlight": false },
+    { "title": "✉️ Contact Me", "url": "contact.php", "highlight": false }
+  ],
+  "stats": {
+    "projects": 12,
+    "commits": 340,
+    "skills": 8,
+    "coffee_cups": 999
+  }
+}

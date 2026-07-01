@@ -1,0 +1,8 @@
+PHP Facts
+=========
+
+1. PHP stands for PHP: Hypertext Preprocessor
+2. Created by Rasmus Lerdorf in 1994
+3. PHP 8.x supports JIT compilation
+4. Used by over 77% of all websites
+5. Laravel, WordPress, and Drupal are built on PHP

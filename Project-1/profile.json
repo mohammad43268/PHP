@@ -1,0 +1,25 @@
+{
+  "profile": {
+    "name": "Mohammad Huzaifa",
+    "bio": "Frontend Developer exploring the backend with PHP ⚡",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4",
+    "theme_color": "#4F46E5"
+  },
+  "links": [
+    {
+      "title": "💻 My GitHub",
+      "url": "https://github.com/mohammad43268",
+      "highlight": true
+    },
+    {
+      "title": "📁 Portfolio Projects",
+      "url": "#",
+      "highlight": false
+    },
+    {
+      "title": "✉️ Contact Me",
+      "url": "mailto:hello@example.com",
+      "highlight": false
+    }
+  ]
+}
