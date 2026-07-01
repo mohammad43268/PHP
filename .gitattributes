@@ -1,0 +1,3 @@
+# Ignore JavaScript and C++ files for repository language statistics
+*.js linguist-detectable=false
+*.cpp linguist-detectable=false
